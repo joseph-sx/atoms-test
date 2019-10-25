@@ -1,0 +1,8 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300; }
+
+#logo-title {
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: -1px; }
