@@ -45,7 +45,7 @@ a {
             a {
                 height: 70px;
                 line-height: 70px;
-                color: #000;
+                color: $black;
                 font-size: 14px;
                 display: inline-block;
                 letter-spacing: 0.5px;
@@ -236,7 +236,7 @@ section#api-section {
             margin: auto;
             width: 60%;
             height: 4px;
-            background: #b363d7;
+            background: $light-purple;
         }
     }
 
@@ -258,4 +258,136 @@ section#api-section {
         background-color: $boxes-bg;
         text-align: right;
     }
+}
+section#prices{
+    .container{
+        padding-top:30px;
+    }
+    .col-md-3{
+        padding: 0 !important;
+    }
+}
+.tier-container {
+    padding: 50px 0;
+
+    h5 {
+        &:hover {
+            &:after {
+                width: 80%;
+            }
+        }
+    }
+
+    h5 {
+        text-transform: uppercase;
+        text-align: center;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 18%;
+            margin: auto;
+            width: 50px;
+            height: 1px;
+            background: #454545;
+            -webkit-transition: all .5s ease-out;
+            -moz-transition: all .5s ease-out;
+            -o-transition: all .5s ease-out;
+            transition: all .5s ease-out;
+        }
+    }
+
+    h2 {
+        text-align: center;
+
+        span {
+            font-size: 16px;
+            margin-top: -10px;
+        }
+
+        b {
+            font-size: 16px;
+        }
+    }
+
+    ul {
+        width: 100%;
+        padding: 10px 25px;
+        list-style: none;
+        .item-not-included{
+            color: $light-dark;
+            text-decoration: line-through;
+        }
+        li {
+            background-image: url(img/checked-pricing.png);
+            background-repeat: no-repeat;
+            background-position: 0%;
+            padding-left: 30px;
+            line-height: 24px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+
+    }
+
+    a {
+        width: 70%;
+        margin: 0 auto;
+        display: block;
+        padding: 12px 60px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: capitalize !important;
+    }
+}
+.popular-tier{
+    margin-top: -23px;
+    box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.404);
+    overflow: hidden;
+    position: relative;
+    background-color: $light-purple !important;
+    color: white !important;
+    ul{
+        li.item-not-included{
+            color: $white;
+        }
+        li{
+            background-image: url(img/checked-pricing-white.png);
+        }
+    }
+    h5{
+        font-size: 40px;
+        &:after{
+            background: $white !important;
+            top:22%;
+        }
+    }
+    .popular-badge {
+            background-color: $aqua;
+            height: 150px;
+            left: -125px;
+            position: absolute;
+            top: -80px;
+            width: 250px;
+            -webkit-transform: rotate(-45deg);
+
+        span {
+            color: $white;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 1.005em;
+            left: 90px;
+            top: 120px;
+            position: absolute;
+            width: 80px;
+          }
+      }
 }
