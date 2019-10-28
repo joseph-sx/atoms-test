@@ -132,6 +132,10 @@ a.button {
     }
 }
 
+.btn-flat-purple {
+    border: 1px solid $light-purple;
+}
+
 .btn-icon-play {
     background-image: url(img/btn-play.png);
     background-position: 90% 50%;
@@ -259,14 +263,17 @@ section#api-section {
         text-align: right;
     }
 }
-section#prices{
-    .container{
-        padding-top:30px;
+
+section#prices {
+    .container {
+        padding-top: 30px;
     }
-    .col-md-3{
+
+    .col-md-3 {
         padding: 0 !important;
     }
 }
+
 .tier-container {
     padding: 50px 0;
 
@@ -316,10 +323,12 @@ section#prices{
         width: 100%;
         padding: 10px 25px;
         list-style: none;
-        .item-not-included{
+
+        .item-not-included {
             color: $light-dark;
             text-decoration: line-through;
         }
+
         li {
             background-image: url(img/checked-pricing.png);
             background-repeat: no-repeat;
@@ -347,36 +356,42 @@ section#prices{
         text-transform: capitalize !important;
     }
 }
-.popular-tier{
+
+.popular-tier {
     margin-top: -23px;
     box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.404);
     overflow: hidden;
     position: relative;
     background-color: $light-purple !important;
     color: white !important;
-    ul{
-        li.item-not-included{
+
+    ul {
+        li.item-not-included {
             color: $white;
         }
-        li{
+
+        li {
             background-image: url(img/checked-pricing-white.png);
         }
     }
-    h5{
+
+    h5 {
         font-size: 40px;
-        &:after{
+
+        &:after {
             background: $white !important;
-            top:22%;
+            top: 22%;
         }
     }
+
     .popular-badge {
-            background-color: $aqua;
-            height: 150px;
-            left: -125px;
-            position: absolute;
-            top: -80px;
-            width: 250px;
-            -webkit-transform: rotate(-45deg);
+        background-color: $aqua;
+        height: 150px;
+        left: -125px;
+        position: absolute;
+        top: -80px;
+        width: 250px;
+        -webkit-transform: rotate(-45deg);
 
         span {
             color: $white;
@@ -388,6 +403,63 @@ section#prices{
             top: 120px;
             position: absolute;
             width: 80px;
-          }
-      }
+        }
+    }
+}
+
+section#experts {
+    margin-top: 50px;
+    padding: 40px 0;
+    background-image: url(img/world-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: $sect-bg;
+
+}
+
+.plazos {
+    padding: 15px 0;
+
+    .btn-flat-purple {
+        padding: 15px
+    }
+
+    .seleccionado {
+        background-color: $light-purple;
+        color: $white;
+    }
+}
+
+.datos {
+    margin-top: 30px;
+
+    table {
+        width: 100%;
+
+        td.item-tit {
+            text-align: right;
+        }
+
+        td.item-val {
+            text-align: left;
+            padding-left: 5px;
+        }
+    }
+}
+
+.calculator-subtitle {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.calculator-container {
+    padding: 15px;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.17);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }

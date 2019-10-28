@@ -11,6 +11,18 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
 
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Plugin JavaScript file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+
+    <script src="assets/functions.js"></script>
+
     <title>Atoms Test</title>
 </head>
 
@@ -54,6 +66,45 @@
                         </div>
                         <a class="button btn-aqua btn-icon-play" href="#">Watch Demo</a>
                         <a class="button btn-purple" href="#">Start Now</a>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="calculator-container">
+                            <p class="calculator-subtitle">Monto deseado</p>
+                            <input type="text" id="monto-deseado" value="" />
+                            <p class="calculator-subtitle">Tasa Anual</p>
+                            <input type="text" id="tasa-anual" value="" />
+                            <div class="plazos">
+                                <p class="calculator-subtitle" style="text-align: center;">Plazo en meses</p>
+                                <a href="#" class="button btn-flat-purple seleccionado" data-plazo="12">12</a>
+                                <a href="#" class="button btn-flat-purple" data-plazo="24">24</a>
+                                <a href="#" class="button btn-flat-purple" data-plazo="36">36</a>
+                            </div>
+                            <div class="datos">
+                                <table>
+                                    <tr>
+                                        <td class="item-tit">Pago Mensual</td>
+                                        <td class="item-val">$<span class="mensualidad"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-tit">Comisión de apertura</td>
+                                        <td class="item-val">$<span class="comision"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-tit">Monto neto depositado</td>
+                                        <td class="item-val">$<span class="neto-depositado"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-tit">Total pagado</td>
+                                        <td class="item-val">$<span class="total-pagar"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-tit">CAT</td>
+                                        <td class="item-val"><span class="cat"></span>%</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -237,7 +288,7 @@
                             <a href="#" class="button btn-aqua">Sign up</a>
                             <div class="popular-badge">
                                 <span>Popular</span>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -260,20 +311,32 @@
             </div>
         </section>
 
+        <section id="experts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="text-align: center;">
+                        <h1 class="sect-title">Trusted by world experts</h1>
+                        <br><br>
+                        <br><br>
+                        <br><br>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>s
 </body>
 
 </html>
