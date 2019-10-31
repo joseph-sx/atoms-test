@@ -57,13 +57,21 @@ $(document).ready(function () {
         $('.plazos a.button').removeClass('seleccionado');
         $(this).addClass('seleccionado');
         console.log($(this).data("plazo"));
-        updateData(instancia_monto.data("ionRangeSlider").old_from,plazos,comApertura,tasaAnual,cat);
+        updateData(instancia_monto.data("ionRangeSlider").old_from,plazos,comApertura,tasa[plazos],cat);
         var o = {
             from: tasa[plazos]
         }
 
         instancia_tasa.data("ionRangeSlider").update(o);
 
+    });
+
+    $(".faq-widget h4").click(function (e) {
+        e.preventDefault();
+        $('.faq-widget h4').removeClass('faq-active-tit');
+        $('.faq-widget div').removeClass('faq-active-content')
+        $(this).next().addClass('faq-active-content');
+        $(this).addClass('faq-active-tit');
     });
 });
 function per(monto, porcentaje) {

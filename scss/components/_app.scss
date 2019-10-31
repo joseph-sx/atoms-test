@@ -3,6 +3,27 @@ body {
     font-weight: 300;
 }
 
+.header-bg {
+    z-index: -9;
+    position: absolute;
+    background-image: url(img/bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: -54%;
+    top: 45%;
+    height: 900px;
+    width: 100%;
+    opacity: 0.4;
+    -webkit-border-bottom-left-radius: 60px;
+    -moz-border-radius-bottomleft: 60px;
+    border-bottom-left-radius: 60px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 #logo-title {
     text-transform: uppercase;
     font-size: 26px;
@@ -117,6 +138,17 @@ a.button {
     &:hover {
         background-color: transparent;
         color: $aqua;
+    }
+}
+
+.btn-flat-aqua {
+    color: $white;
+    background-color: transparent;
+    border: 1px solid $aqua;
+
+    &:hover {
+        color: $white;
+        background: $aqua;
     }
 }
 
@@ -455,6 +487,7 @@ section#experts {
 }
 
 .calculator-container {
+    background-color: $white;
     padding: 15px;
     -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.17);
     -moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.17);
@@ -462,4 +495,149 @@ section#experts {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+
+ul.clients-feature-list {
+    list-style: none;
+
+    li {
+        background-image: url(img/checked.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        padding-left: 25px;
+        line-height: 24px;
+    }
+}
+
+.faq-widget {
+    color: $light-dark;
+
+    h4 {
+        padding: 10px;
+        margin: 0px;
+        font-size: 18px;
+        font-weight: 300;
+        background-image: url(img/drop-down-faq.png);
+        background-position: 98% 59%;
+        background-repeat: no-repeat;
+    }
+
+    div {
+        padding: 10px;
+        background-color: $sect-bg;
+        display: none;
+    }
+
+    .faq-active-tit {
+        background-color: $aqua;
+        color: $white;
+    }
+
+    .faq-active-content {
+        display: block;
+    }
+}
+
+.faq-features-container {
+    padding: 40px 30px;
+    background-color: $sect-bg;
+
+    h5 {
+        margin-top: 10px;
+
+        &:after {
+            content: ' ';
+            height: 1px;
+            width: 40px;
+            margin-top: 7px;
+            display: block;
+            background-color: $aqua;
+        }
+    }
+
+    a {
+        margin-top: 10px;
+    }
+
+    &:hover {
+        background-color: $aqua;
+        color: $white;
+        box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.18);
+        -moz-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.18);
+        -webkit-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.18);
+        transform: translate(0, -10px);
+        -webkit-transform: translate(0, -10px);
+        -moz-transform: translate(0, -10px);
+        transition: all .3s ease-out;
+
+        h5 {
+            &:after {
+                background-color: $white;
+                width: 100%;
+            }
+        }
+
+        a.btn-purple {
+            background-color: transparent;
+            border-color: $white;
+        }
+    }
+}
+
+.clients-bar {
+    text-align: center;
+    margin: 60px 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-5 {
+        flex: 1 0 18%;
+        margin: 5px;
+        height: 50px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+section#wave {
+    padding: 50px 0px;
+    background-color: $sect-bg;
+
+    h1.sect-title {
+        font-size: 46px;
+        font-weight: 300;
+
+        span {
+            color: $light-purple;
+        }
+
+        &:after {
+            display: none;
+        }
+    }
+
+    a.button {
+        padding: 10px 60px;
+    }
+}
+
+section#footer {
+    color: $black;
+    padding: 60px 0px;
+    background-image: url(img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    ul {
+        list-style: none;
+        padding: 0px;
+
+        li {
+            padding: 0px;
+            line-height: 34px;
+        }
+    }
 }
